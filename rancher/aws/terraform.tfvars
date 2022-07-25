@@ -1,18 +1,18 @@
 
 # AWS access key used to create infrastructure
-aws_access_key = ""
+aws_access_key = "TF_VAR_AWS_ACCESS_KEY_ID"
 
 # AWS secret key used to create AWS infrastructure
-aws_secret_key = ""
+aws_secret_key = "TF_VAR_AWS_SECRET_ACCESS_KEY"
 
 # Admin password to use for Rancher server bootstrap, min. 12 characters
-rancher_server_admin_password = ""
+rancher_server_admin_password = "TF_VAR_RANCHER_ADMIN_PASSWORD"
 
 # Add a windows node to the workload cluster
 add_windows_node = false
 
 # AWS region used for all resources
-aws_region = "us-east-1"
+aws_region = "TF_VAR_AWS_AWS_REGION"
 
 # AWS session token used to create AWS infrastructure
 aws_session_token = ""
@@ -24,7 +24,7 @@ cert_manager_version = "1.7.1"
 docker_version = "19.03"
 
 # Instance type used for all EC2 instances
-instance_type = "t3a.medium"
+instance_type = "TF_VAR_INSTANCE_TYPE"
 
 # Prefix added to names of all resources
 prefix = "quickstart"
